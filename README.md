@@ -1,0 +1,2 @@
+# thermosculpt-rip
+# dermatin-rip
