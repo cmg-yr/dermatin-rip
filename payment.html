@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://www.buydermatin.com/v1/checkout.php?prospect_id=56050 -->
+<html class="no-js" ng-app="stepOne"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+
+
+<title>{{S1.name}}</title>
+
+
+
+<meta name="description" content="">
+
+
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+
+<meta http-equiv="content-language" content="en-us">
+
+ 
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="HandheldFriendly" content="true">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+
+
+<link rel="stylesheet" href="assets/css/app.css">
+
+<!-- <link rel="icon" type="image/png" sizes="16x16" href="/v2/app/desktop/images/favicon-16x16.png"> -->
+
+
+
+
+
+    
+
+    <title>Dermatin</title>
+
+    <meta name="description" content="Dermatin anti-aging cream">
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta http-equiv="content-language" content="en-us">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="true">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"> -->
+
+    <link rel="stylesheet" href="assets/app(1).css">
+
+
+
+
+    <link rel="icon" type="/png" href="https://www.buydermatin.com/v1/app/desktop/images/favicon.ico">
+    <meta name="viewport" content="width=1100, user-scalable=0">
+
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/v6/vid/app/desktop//v1/app/desktop/css/reset1.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style1.css">
+
+<!--     <link rel="stylesheet" type="text/css" href="/v6/vid/app/desktop//v1/app/desktop/css/cp-custom1.css">
+    <link rel="stylesheet" type="text/css" href="/v6/vid/app/desktop//v1/app/desktop/css/review.css"> -->
+    
+    <!-- <script src="js/jquery.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script> -->
+
+    <style>
+       .error,.valid{
+    background-position:right;
+    background-repeat:no-repeat
+}
+#overlay-1,#popover-1{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%
+}
+#pop-box-1 div>h2,#pop-box-1 div>h3{
+    color:#ed145b;
+    font-family:Montserrat,sans-serif
+}
+.error{
+    -webkit-box-shadow:0 0 6px rgba(201,48,44,.75);
+    -moz-box-shadow:0 0 6px rgba(201,48,44,.75);
+    box-shadow:0 0 6px rgba(201,48,44,.75);
+    border-color:rgba(201,48,44,.85);
+    background-image:url(/assets/images/warning.png)
+}
+.valid{
+    -webkit-box-shadow:0 0 6px rgba(68,157,68,.85);
+    -moz-box-shadow:0 0 6px rgba(68,157,68,.85);
+    box-shadow:0 0 6px rgba(68,157,68,.85);
+    border-color:rgba(68,157,68,.85);
+    background-image:url(/assets/images/tick.png)
+}
+#popover-1{
+    /*background:url(/v6/vid/app/desktop//v1/app/desktop/images/down-bg.jpg) top center no-repeat #fff;
+    */
+    background-size:cover;
+    display:none;
+    z-index:100
+}
+#popover-1 img{
+    display:block;
+    margin:25px auto 0;
+    position:relative;
+    left:-85px
+}
+#overlay-1{
+    background:#fff;
+    opacity:.65
+}
+#pop-box-1 div>h2{
+    text-indent:0;
+    font-size:58px;
+    font-weight:700
+}
+#pop-box-1 div>h3{
+    font-size:32px;
+    font-weight:300;
+    padding:5px 0
+}
+.f34.grey{
+    font-size:28px
+}
+#pop-box-1{
+    width:765px;
+    margin:4px auto;
+    font-size:24px;
+    text-align:center;
+    position:relative;
+    z-index:2;
+    top:100px;
+    opacity:0;
+    transition:opacity 1s,top 1s;
+    transition-delay:.75s
+}
+#pop-box-1 .para{
+    margin:0
+}
+#pop-box-1 a{
+    color:#000
+}
+#pop-box-1 p{
+    text-align:center;
+    font-family:'Open Sans',sans-serif;
+    line-height:normal;
+    font-size:19px
+}
+#pop-box-1 p span{
+    font-weight:800
+}
+#down-btn-1{
+    background:#39edc5;
+    border-radius:5px;
+    box-shadow:4px 4px 0 0 #5a5a5a;
+    color:#000;
+    display:inline-block;
+    font-family:Montserrat,sans-serif;
+    font-size:18px;
+    font-weight:700;
+    padding:25px 36px 25px 33px;
+    position:relative;
+    text-decoration:none;
+    width:325px
+}
+#down-btn-1:active{
+    background:#02cfab
+}
+#down-btn-1:after{
+    position:absolute;
+    content:'';
+    width:0;
+    height:0;
+    left:30px;
+    top:30px;
+    border-top:8px solid transparent;
+    border-bottom:8px solid transparent;
+    border-left:10px solid #e8215d
+}
+#pop-terms-1{
+    margin-top:35px
+}
+#pop-terms-1 p{
+    font-size:11px;
+    padding:0 45px
+}
+.pulse{
+    animation-name:pulse;
+    -webkit-animation-name:pulse;
+    animation-duration:1.5s;
+    -webkit-animation-duration:1.5s;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite
+}
+@-webkit-keyframes pulse{
+    0%,100%{
+        -webkit-transform:scale(.95);
+        opacity:.7
+    }
+    50%{
+        -webkit-transform:scale(1);
+        opacity:1
+    }
+}
+.move{
+    animation-duration:3s;
+    -webkit-animation-duration:3s;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    animation-name:move;
+    -webkit-animation-name:move
+}
+.light{
+    content:" ";
+    background:url(/assets/images/light.png) no-repeat;
+    width:294px;
+    height:96px;
+    display:block;
+    position:absolute;
+    top:263px
+}
+@-webkit-keyframes move{
+    0%{
+        left:-150px
+    }
+    100%{
+        left:100%
+    }
+}
+@keyframes move{
+    0%{
+        left:-150px
+    }
+    100%{
+        left:100%
+    }
+}
+iframe{
+    height:40px!important
+}
+.iframe-wrap{
+    display:inline-block;
+    height:40px;
+    margin:-5px 0 0 -6px;
+    overflow:hidden;
+    vertical-align:top;
+    width:185px
+}
+#epc_cvv_wrapper+.footerlink.clickable{
+    transform:translateY(-30px)
+}
+.text>input{
+    width:181px;
+    height:29px;
+    text-indent:0
+}
+.n-field,.text>select{
+    width:180px
+}
+input[type=text]{
+    border-radius:3px;
+    height:29px;
+    width:180px;
+    line-height:normal
+}
+#form-inner{
+    border-bottom:3px solid #afb4c6
+}
+form{
+    padding:10px 22px 0 0
+}
+#form-bottom{
+    border:none
+}
+.n-field{
+    border-radius:5px
+}
+input[type=text]{
+    border-radius:3px;
+    height:28px
+}
+ .discountsection {
+     z-index: 100;
+     text-align: center;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     height: 50px;
+     line-height: 50px;
+     background-color: red;
+     border-bottom: white dashed 4px;
+     font-family: Arial,Helvetica,sans-serif;
+     font-size: 15px;
+     font-weight: bold;
+     color: white;
+}
+ #outer-wrapper{
+     margin-top: 50px;
+}
+ #ouibounce-modal {
+     font-family: 'Open Sans',sans-serif;
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 9;
+}
+ #popup {
+     position: absolute;
+     text-align: center;
+     background: rgba(0,0,0,.85);
+     width: 100%;
+     display: block;
+     top: 0;
+     left: 0;
+     height: 100%;
+     padding-top: 100px;
+     padding-bottom: 100px;
+     z-index: 999;
+}
+ .popup_con {
+     max-width: 700px;
+     margin: 0 auto;
+     background: #fff;
+     padding: 15px 15px 15px;
+     border-radius: 5px;
+     position: relative;
+}
+ #close {
+     position: absolute;
+     right: 10px;
+     top: 0px;
+     font-size: 36px;
+     font-weight: bolder;
+     z-index: 2;
+     cursor: pointer;
+     font-family: inherit;
+     color: #000;
+}
+ .img_d {
+     display: block;
+}
+
+    </style>
+
+<script type="text/javascript" charset="UTF-8" src="assets/js/common.js"></script><script type="text/javascript" charset="UTF-8" src="assets/util.js"></script></head>
+
+<body style="">
+    
+
+
+
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="outer-wrapper">
+
+
+
+        <div class="discountsection">SPECIAL DISCOUNT ACTIVATED! - SAVE OVER 80% <!-- 50% -->OFF SHIPPING &amp; HANDLING ON ALL ORDERS PLACED TODAY! ONLY <span id="dis_price">$4.94</span>! PER TRIAL</div>
+
+
+
+
+
+
+
+
+
+
+        <div id="wrapper" class="after">
+            <div id="banner">
+                <img src="assets/images/global-logo.png" alt="logo" class="logo" width="215" height="86">
+                <div id="steps">
+                    <ul>
+                        <li class="step-1">
+                            <div class="step">
+                                <p>1</p>
+                            </div>
+                            <p class="step-name">SHIPPING INFO</p>
+                        </li>
+                        <li class="step-2">
+                            <div class="step">
+                                <p>2</p>
+                            </div>
+                            <p class="step-name">FINISH ORDER</p>
+                        </li>
+                        <li class="step-3">
+                            <div class="step">
+                                <p>
+                                    <!-- <img src="/v6/vid/app/desktop//v1/app/desktop/images/step-check.png" width="16" height="13" alt="check" class="check" /> -->
+                                    <i class="sprite sprite-step-check check"></i>
+
+                                </p>
+                            </div>
+                            <p class="step-name">SUMMARY</p>
+                        </li>
+                    </ul>
+                    <div id="steps line">
+                        <div id="slider"></div>
+                        <style type="text/css">
+                            #slider {
+                                width: 142px !important;
+                            }
+                        </style>
+                    </div>
+                </div>
+                <div class="demographic">
+                  <!--   <img src="/v6/vid/app/desktop//v1/app/desktop/images/flag.png" width="40" height="28" alt="flag" class="flag" /> -->
+
+
+                  <i class="sprite sprite-flag flag"></i>
+                  <p>Internet Exclusive Offers
+                    <br>Available to USA Residents Only</p>
+                </div>
+            </div>
+            <div id="approve-container">
+                <div id="viewing" style="opacity: 1;">
+                 <!--  <img src="/v6/vid/app/desktop//v1/app/desktop/images/eye.png" alt="eye" class="eye" width="33" height="20" /> -->
+                 <i class="sprite sprite-eye eye"></i>
+
+                 <p>13 others are viewing this offer right now - <span class="count-down bl" id="count-down">04:26:01</span></p>
+             </div>
+             <p class="f17 bl grey-2 pb15"><span class="green"> Great job test!
+
+             </span>  You’re taking your first step towards better skin. Act now <br>so you don’t miss out on this offer!</p>
+
+             <p class="f14 grey-2 pb15">Current Availability: <span class="low-avail availability"><span class="red"></span><span></span><span></span><span></span><span></span></span><span class="bl">LOW STOCK.</span> Sell-out Risk: <span class="red bl">HIGH</span> </p>
+
+             <p class="f14 grey-2 pb5">Just pay a small shipping fee. Enjoy your expedited delivery to <span class="red bl">
+                Marshfield ,MO</span></p>
+                <p class="f14 grey-2">Your order is scheduled to arrive by <span class="red bl">October 14th 2019</span></p>
+            </div>
+            <div id="info">
+                <div id="info-inner">
+                    <div id="price-container">
+                        <img src="assets/prod.png" alt="" id="product" class="fl" width="245" height="317">
+                        <div class="fr" id="price-info">
+                            <!-- ngRepeat: info in prodInfo.productContent -->
+                            <div id="prod-info" class="ng-scope">
+                                <p class="bl f18 grey-1">Dermatin anti-aging cream</p>
+                                <p class="f14 grey-2">Renew, Restore &amp; Protect</p>
+                                <p class="f14 grey-2">30 Day Supply, No Commitments</p>
+                            </div>
+                            <!-- end ngRepeat: info in prodInfo.productContent -->
+                            <div id="prices">
+                                <div class="grey-2 after bl bb f20 np">
+                                    <p class="fr green">FREE</p>
+                                    <p class="fl">Price</p>
+                                </div>
+                                <div class="grey-2 after bb np fon-s">
+                                    <p class="fr ship-total">$4.94</p>
+                                    <p class="fl">Shipping</p>
+                                </div>
+                                <div class="grey-2 after bb np fon-s">
+                                    <p class="fr">$0.00</p>
+                                    <p class="fl"> Handling:</p>
+                                </div>
+                                <div class="after grey-2 np fon-s">
+                                    <p class="fr dis-total">$4.94</p>
+                                    <p class="fl">TOTAL</p>
+                                </div>
+                                <img id="delivery" alt="" src="assets/images/delivery.png" width="336" height="43">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/images/cp-arrow.png" alt="" id="arrow" width="649" height="96">
+
+                    <span class="light move"></span>
+                    <span style="margin: 20px 0 0 0px; display: block;"> 
+                      <img src="assets/images/chkoutbottom.png" alt="" width="608" height="127"> 
+                  </span>
+
+
+
+                    <!-- <div class="pt">
+                        <p style="color: #999999; font-size: 10px;">We take great pride in our NEW AGE CREAM Cream! It is the most powerful Anti-Aging system on the market. All our customers love it! If for some reason you do not, we can issue a refund. By Submitting, you consent to having read and agreed to our <a data-toggle="modal" data-target="javascript:void(0);" onclick="javascript:openNewWindow('page-terms.php', 'modal');">Terms</a>. After your fourteen days trial period, you will be charged the retail price of the product and will be enrolled in our anti-wrinkle membership program. Call Customer Care anytime if you have any questions or concerns.
+                        </p>
+                    </div> -->
+                    <br>
+                    <!-- c-review Start 1st -->
+                    <div class="c-review">
+                        <div class="blue-sec">
+                            <div class="headshot">
+                                <img src="assets/images/headshot1.jpg" width="200" height="200">
+                            </div>
+                            <div class="review-text">
+                                <p>My fair, sensitive skin seemed to wrinkle overnight. I knew the aging process was just a part of life, but it was hard to see such a drastic change in what was once my best feature. Then a friend told me about Dermatin anti-aging cream.</p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="biodata">
+                                <p>Olivia 45 Las Vegas, USA</p><!-- <img src="/v6/vid/app/desktop//v1/app/desktop/images/stars.png" width="91" height="15"> -->
+                                <img src="assets/images/stars.png" width="91" height="15">
+                                <!-- <i class="sprite sprite-stars"></i> -->
+
+
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <!-- c-review end 1st -->
+                    <br>
+                    <!-- c-review Start Second -->
+                    <div class="c-review">
+                        <div class="blue-sec">
+                            <div class="headshot">
+                                <img src="assets/images/headshot2.jpg" width="200" height="200">
+                            </div>
+                            <div class="review-text">
+                                <p>I was thrilled to find Dermatin anti-aging cream. It was so easy to use and, before I knew it, the face looking back at me from the mirror was smoother and younger looking. My facial lines just began to disappear. </p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="biodata">
+                                <p>Jenny 60 New York, USA</p><img src="assets/images/stars(1).png" width="91" height="15">
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <!-- c-review Start Second -->
+                    <p style="color: #000000;
+                    font-size: 8.5px;
+                    line-height: 19px;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    text-align: justify;">We are confident you will see the benefits of using our Dermatin anti-aging cream within our 16 Day trial. You are taking the next step towards a more confident you! Upon signing up your trial offer, your credit card provided will be charged a one-time processing fee of $4.94 for a 30 day supply of Dermatin anti-aging cream. If you do not contact customer service to terminate your trial enrollment within 16 Days of the date that you enroll in the Program, you will be charged $4.94 and be sent out a full 30 day supply of New Age Cream. Your enrollment date is the date that you submit your order for the trial product. By submitting, you consent to having read and agreed to our <a href="javascript:void(0);" onclick="javascript:openNewWindow(&#39;page-terms.php&#39;,&#39;modal&#39;);"> Terms and Conditions </a> and after your 16 Day trial person has expired, being enrolled in our membership program to receive a full 30 day supply of New Age Cream every 30 days. All orders are shipped within one business day.</p>
+                </div>
+                <!-- <div id="terms" class="after" ng-include="'ngIncludes/terms.php'"></div> -->
+            </div>
+            <div id="form">
+                <div id="form-top"></div>
+                <div id="form-inner">
+
+
+
+                    <form method="post" action="https://www.buydermatin.com/v1/ajax.php?method=new_order_prospect" name="checkout_form" accept-charset="utf-8" enctype="application/x-www-form-urlencoded;charset=utf-8" novalidate="novalidate">
+                        <input type="hidden" name="limelight_charset" id="limelight_charset" value="utf-8">
+                        
+                        <div id="epc_cc_error"></div>
+                        <div id="epc_cvv_error"></div>
+                        <div id="billing-info">
+                            <p>Is your billing address the same as your shipping address?
+                            </p>
+                            <div id="billing-btn">
+                                <input type="radio" name="billingSameAsShipping" value="yes" checked="checked"> YES
+                                <input type="radio" name="billingSameAsShipping" value="no"> NO
+                            </div>
+                        </div>
+                        <div id="divBillingInfo" class="billing-info" style="display: none;">
+
+                            <!-- Billing Fields -->
+                            <div class="text">
+
+                                <label> First Name</label>
+                                <input type="text" name="billingFirstName" placeholder="Billing First Name" data-error-message="Please enter your billing first name!" class="n-field">
+
+                            </div>
+                            <div class="text">
+                                <label>Last Name:</label>
+                                
+                                <input type="text" name="billingLastName" placeholder="Billing Last Name" data-error-message="Please enter your billing last name!" class="n-field">
+
+                            </div>
+
+                            <div class="text">
+                                <label>Address:</label>
+                                
+                                <input type="text" name="billingAddress1" placeholder="Billing Address" data-error-message="Please enter your billing address!" class="n-field">
+
+                            </div>
+                            <div class="text">
+                                <label>ZIP:</label>
+                                
+                                <input type="text" name="billingZip" placeholder="Billing Zip Code" data-error-message="Please enter a valid billing zip code!" class="n-field" maxlength="5" onkeyup="javascript: this.value = this.value.replace(/[^0-9]/g, &#39;&#39;);">
+
+                            </div>
+
+                            <div class="text">
+                                <label>City:</label>
+                                
+                                <input type="text" name="billingCity" placeholder="Billing City" data-error-message="Please enter your billing city!" class="n-field">
+
+                            </div>
+                            <div class="text">
+                                <label>State:</label>
+                                
+                                <input type="text" name="billingState" placeholder="Billing State" data-error-message="Please enter your billing state!" class="n-field">
+
+                            </div>
+                            <div class="text" style="display:none;">
+                                <label>Country:</label>
+
+                                <select name="billingCountry" data-error-message="Please select your billing country!" class="n-field">
+
+                                   <option value="">Select Country</option>
+                               </select>
+
+                           </div>
+
+                       </div>
+
+                       <div style="display: none;">
+                        <label>Card Type:</label>
+
+
+
+                        <select name="creditCardType" class="n-input" data-deselect="false" data-error-message="Please select valid card type!" style="width:180px;">
+                            <option value="">Card Type</option>
+                                                        <option value="visa">Visa</option>
+                                                        <option value="discover">Discover</option>
+                                                        <option value="master">Master Card</option>
+                                                    </select>
+
+                    </div>
+                    <div>
+                        <label>Credit Card #:</label>
+                        <div id="epc_cc_wrapper" class="iframe-wrap">
+
+
+
+                            <!-- <input type="text" name="creditCardNumber" class="required masked" maxlength="16" data-error-message="Please enter a valid credit card number!" onkeyup="javascript: this.value = this.value.replace(/[^0-9]/g, '');checkMaster(this.value);" /> -->
+                            <input type="text" name="creditCardNumber" class="required masked" maxlength="16" data-error-message="Please enter a valid credit card number!" onkeyup="javascript: this.value = this.value.replace(/[^0-9]/g, &#39;&#39;);">
+                            
+
+                        </div>
+                    </div>
+                    <div>
+                        <label>Exp. Date:</label>
+
+
+
+                        <select name="expmonth" class=" required s-input" data-error-message="Please select a valid expiry month!">
+
+                         <option value="">Month</option>
+                         <option value="01">(01) January</option>
+                         <option value="02">(02) February</option>
+                         <option value="03">(03) March</option>
+                         <option value="04">(04) April</option>
+                         <option value="05">(05) May</option>
+                         <option value="06">(06) June</option>
+                         <option value="07">(07) July</option>
+                         <option value="08">(08) August</option>
+                         <option value="09">(09) September</option>
+                         <option value="10">(10) October</option>
+                         <option value="11">(11) November</option>
+                         <option value="12">(12) December</option>                    
+                       </select>
+
+                     <select name="expyear" class="required s-input" data-error-message="Please select a valid expiry year!">
+
+                         <option value="">Year</option>
+                         <option value="19">2019</option>
+                         <option value="20">2020</option>
+                         <option value="21">2021</option>
+                         <option value="22">2022</option>
+                         <option value="23">2023</option>
+                         <option value="24">2024</option>
+                         <option value="25">2025</option>
+                         <option value="26">2026</option>
+                         <option value="27">2027</option>
+                         <option value="28">2028</option>
+                         <option value="29">2029</option>
+                         <option value="30">2030</option>
+                         <option value="31">2031</option>
+                         <option value="32">2032</option>
+                         <option value="33">2033</option>
+                         <option value="34">2034</option>
+                         <option value="35">2035</option>
+                         <option value="36">2036</option>
+                         <option value="37">2037</option>
+                         <option value="38">2038</option>                     
+                       </select>
+
+                 </div>
+                 <div id="cvv">
+                    <label>CVV2:</label>
+                    <div id="epc_cvv_wrapper" class="iframe-wrap">
+
+                       <input type="text" name="CVV" class="required" data-validate="cvv" maxlength="3" data-error-message="Please enter a valid CVV code!" style="width: 86px;
+                       float: left;
+                       margin-left: 7px;">
+
+                   </div>
+                   <!--<a href="javascript:void(0);" onclick="javascript:openNewWindow('cvv.php', 'modal');" class="footerlink clickable">What is this?</a>-->
+               </div>
+
+
+               <div id="form-bottom">
+                <div class="form-button ">
+                    <div id="lock"></div>
+                    <input type="submit" value="COMPLETE CHECKOUT">
+                </div>
+                            <!-- <p style="text-align: left;
+                                padding:39px 10px 20px 40px;">By clicking the "COMPLETE CHECKOUT" button I agree that i am over 18 years age and agree to the <a style="width:auto" href="javascript:void(0)" onclick="javascript:openNewWindow('page-terms.php', 'modal');"  >Term and Condition</a>.</p> -->
+                            </div>
+
+                            <p id="loading-indicator" style="display:none;">Processing...</p>
+                            <p id="crm-response-container" style="display:none;">Limelight messages will appear here...</p>
+                        </form>
+
+                    </div>
+                    <!-- review -->
+                    <div class="s-review">
+                        <div class="r-sec1">
+                            <img src="assets/images/headshot3.jpg" width="61" height="61">
+                            <h3>Dermatin did wonders for my skin!</h3>
+                        </div>
+                        <div class="clear"></div>
+                        <div style="margin-top: 5px;">
+                            <p>Fine lines and wrinkles totally erased after just a few days - it's amazing, I look YEARS younger! The best part is it doesn't come back. </p>
+                        </div>
+                        <div class="r-sec3">
+                            <p>-Chloe Morrison</p>
+                            <img src="assets/images/5stars.png" width="85" height="17">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <!-- 1st Review End -->
+                    <div class="s-review">
+                        <div class="r-sec1">
+                            <img src="assets/images/headshot4.jpg" width="61" height="61">
+                            <h3>My partner loves my skin after using Dermatin anti-aging cream!</h3>
+                        </div>
+                        <div class="clear"></div>
+                        <div style="margin-top: 5px;">
+                            <p>I just use it and I am good to go! It truly does make life that much more enjoyable. My skin is more radiant. </p>
+                        </div>
+                        <div class="r-sec3">
+                            <p>-Victoria Rodes</p>
+                            <img src="assets/images/5stars.png" width="85" height="12">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <!-- End review -->
+
+                </div>
+            </div>
+            <footer class="f11 after ng-scope">
+                <p class="ng-scope">
+                    <a href="javascript:void(0);" onclick="javascript:openNewWindow(&#39;page-terms.php&#39;,&#39;modal&#39;);">TERMS   |</a>
+                    <a href="javascript:void(0);" onclick="javascript:openNewWindow(&#39;page-privacy.php&#39;,&#39;modal&#39;);">PRIVACY POLICY   |</a>
+                    <a href="javascript:void(0);" onclick="javascript:openNewWindow(&#39;page-contact.php&#39;,&#39;modal&#39;);">CONTACT US</a>
+                </p>
+                <p class="tc pt10 pb20 ng-scope">2019 © Dermatin - All Rights Reserved</p>
+
+
+
+                <!-- <p id="loading-indicator" style="display:none;"></p> -->        </footer>
+                <!-- test -->
+                <div id="ouibounce-modal" style="display: none;">
+    <div id="popup">
+        
+        <div class="popup_con hos_modal">
+          <div id="close" onclick="popupClose();">×</div>
+            <p class="coupon-text">
+                <img src="assets/images/pop_chk.jpg" alt="" class="img_d" onclick="popupClose();">
+            </p>
+           
+        </div>
+    </div>
+</div>
+                <div id="popover">
+                    <div id="pop-box">
+                        <a href="https://www.buydermatin.com/v1/checkout.php?prospect_id=56050#"><img src="assets/images/close.jpg" width="22" height="22" alt="close" class="close"></a>
+                    </div>
+                    <div id="overlay"></div>
+                </div>
+            </div>
+            <div id="popover-1">
+                <div id="pop-box-1" style="top: 0px; opacity: 0;">
+                    <div>
+                        <h2>WAIT!</h2>
+                        <div class="para">
+                            <h3>Are you sure you want to leave?</h3>
+                            <p><span class="f34 grey">DON'T MISS OUT ON THIS EXCLUSIVE OFFER</span></p>
+                            <!-- <img src="/v6/vid/app/desktop//v1/app/desktop/images/down-prod.png"> -->
+                        </div>
+                    </div>
+                    <p><a href="javascript:void(0);" class="pulse" id="down-btn-1" onclick="javascript:checkoutDownsell();">CLAIM YOUR EXCLUSIVE TRIAL</a></p>
+                    <div id="pop-terms-1">
+                        <p>We are confident that NEW AGE CREAM is your new injection-free solution to beautiful, radiant-looking skin. Packed with powerful anti-aging ingredients, NEW AGE CREAM works to eliminate the look of dark circles, reduce the appearance of wrinkles, enhance skin hydration, and counter effects of stress. Say no to needles - achieve visibly younger looking skin the natural way! Claim your exclusive trial of NEW AGE CREAM now and start seeing results.
+                            <br><a href="https://www.buydermatin.com/v1/checkout.php?prospect_id=56050#" id="noThanks">No thanks, I'd rather not have beautiful, radiant-looking skin.</a></p>
+                        </div>
+                    </div>
+                    <div id="overlay-1"></div>
+                </div>
+
+
+
+            
+            
+<script type="text/javascript">AJAX_PATH="ajax.php/"; app_config={"valid_class":"no-error","error_class":"has-error","loading_class":"loading","crm_type":"limelight","exit_popup_enabled":false,"exit_popup_element_id":"","exit_popup_page":"","offer_path":"\/v1\/","current_step":1,"cbtoken":"","dev_mode":"N","show_validation_errors":"modal","allowed_tc":"8\"m0l1d8J858k853O1lv8sm\"l\"d9J954k952O3l988mvlsd\"J\"54k252O6l683m2l5dmJs5ek\"5\"O0l181m1l1d1J151kd5sOole8\"m[r4j1V8H8q8h8k4R2X|Niraj,V4H2q9h1k3R8X7N3r|jiVaH,q5h6k3R3X6N6r8j5V|Haqthrk,R6X1N1r1j1V1H1q1h|kiRcXvNrr]","allowed_country_codes":["US"],"countries":{"US":{"name":"United States","states":{"AL":{"name":"Alabama"},"AK":{"name":"Alaska"},"AS":{"name":"American Samoa"},"AZ":{"name":"Arizona"},"AR":{"name":"Arkansas"},"AE":{"name":"Armed Forces Middle East"},"AA":{"name":"Armed Forces Americas"},"AP":{"name":"Armed Forces Pacific"},"CA":{"name":"California"},"CO":{"name":"Colorado"},"CT":{"name":"Connecticut"},"DE":{"name":"Delaware"},"DC":{"name":"District of Columbia"},"FM":{"name":"Federated States of Micronesia"},"FL":{"name":"Florida"},"GA":{"name":"Georgia"},"GU":{"name":"Guam"},"HI":{"name":"Hawaii"},"ID":{"name":"Idaho"},"IL":{"name":"Illinois"},"IN":{"name":"Indiana"},"IA":{"name":"Iowa"},"KS":{"name":"Kansas"},"KY":{"name":"Kentucky"},"LA":{"name":"Louisiana"},"ME":{"name":"Maine"},"MD":{"name":"Maryland"},"MA":{"name":"Massachusetts"},"MI":{"name":"Michigan"},"MN":{"name":"Minnesota"},"MS":{"name":"Mississippi"},"MO":{"name":"Missouri"},"MT":{"name":"Montana"},"NE":{"name":"Nebraska"},"NV":{"name":"Nevada"},"NH":{"name":"New Hampshire"},"NJ":{"name":"New Jersey"},"NM":{"name":"New Mexico"},"NY":{"name":"New York"},"NC":{"name":"North Carolina"},"ND":{"name":"North Dakota"},"MP":{"name":"Northern Mariana Islands"},"OH":{"name":"Ohio"},"OK":{"name":"Oklahoma"},"OR":{"name":"Oregon"},"PA":{"name":"Pennsylvania"},"PR":{"name":"Puerto Rico"},"MH":{"name":"Republic of Marshall Islands"},"RI":{"name":"Rhode Island"},"SC":{"name":"South Carolina"},"SD":{"name":"South Dakota"},"TN":{"name":"Tennessee"},"TX":{"name":"Texas"},"UT":{"name":"Utah"},"VT":{"name":"Vermont"},"VI":{"name":"Virgin Islands of the U.S."},"VA":{"name":"Virginia"},"WA":{"name":"Washington"},"WV":{"name":"West Virginia"},"WI":{"name":"Wisconsin"},"WY":{"name":"Wyoming"}}}},"country_lang_mapping":{"US":{"state":"State:","zip":"Zip Code:"},"GB":{"state":"County:","zip":"Postal Code:"},"CA":{"state":"Province:","zip":"Pin Code:"},"IN":{"state":"State:","zip":"Pin:"}},"device_is_mobile":false,"pageType":"checkoutPage","enable_browser_back_button":false,"disable_trialoffer_cardexp":false}</script><script type="text/javascript">app_lang={"error_messages":{"zip_invalid":"Please enter a valid zip code!","email_invalid":"Please enter a valid email id!","cc_invalid":"Please enter a valid credit card number!","cvv_invalid":"Please enter a valid CVV code!","card_expired":"Card seems to have expired already!","card_expire_soon":"Your credit card is about to expire, please update your card information.","common_error":"Oops! Something went wrong! Can you please retry?","not_checked":"Please check the agreement box in order to proceed.","ca_zip_invalid":"Invalid Canada state code","xv_invalid_shipping":"Your shipping address could not be verified","xv_email":"Your email address could not be verified","xv_phone":"Your phone number could not be verified"},"exceptions":{"config_error":"General config error","config_file_missing":"General config error","invalid_array":"Argument is not a valid array","empty_prospect_id":"Prospect ID is empty or invalid","curl_error":"Something went wrong with the request, Please try again.","generic_error":"Something went wrong with the request, Please try again."}};</script><script type="text/javascript">var cbUtilConfig = {"disable_non_english_char_input":false};</script>
+<script src="assets/js/codebase.min.js" type="text/javascript"></script><script>$(function(){$.get("/v1/ajax.php/extensions/trafficloadbalancer/initialize");});</script>
+<script async="" defer="" src="assets/js"></script>
+<script>var event_type= 'keyup';var autopopulate_by= 'zip';var disable_component_restriction= '';</script>
+<script>$(function(){$.get("/v1/ajax.php/extensions/asyncprospect/create-prospect");});</script>            <script src="assets/js/jquery.placeholder.js"></script>
+
+
+            <script>
+               $(document).ready(function(){
+                   $('input').placeholder();
+               });
+
+
+               var spd = 100;
+               var spdVal = 10;
+               var cntDown = 5 * 60 * spdVal;
+               setInterval(function() {
+                var mn, sc, ms;
+                cntDown--;
+                if (cntDown < 0) {
+                    return false;
+                }
+                mn = Math.floor((cntDown / spdVal) / 60);
+                mn = (mn < 10 ? '0' + mn : mn);
+                sc = Math.floor((cntDown / spdVal) % 60);
+                sc = (sc < 10 ? '0' + sc : sc);
+                ms = Math.floor(cntDown % spdVal);
+                ms = (ms < 10 ? '0' + ms : ms);
+                var result = mn + ':' + sc + ':' + ms;
+                document.getElementById('count-down').innerHTML = result;
+            }, spd);
+./payment_files
+
+        </script>                   
+
+
+
+        <!-- <script type="application/javascript">
+
+
+            function popupClose()
+            {
+              $('#ouibounce-modal').hide();
+              $("input[name='creditCardNumber']").val('');
+          }
+
+          function checkMaster(e)
+          {
+                        //var mastercardRegEx = /^(?:5[1-5][0-9]{14})$/;
+                        if(e.charAt(0) == '5' && (/^(?:[1-5])$/.test(e.charAt(1))))
+                        {
+                            $("#ouibounce-modal").show();
+                        }
+
+                    }
+
+                </script> -->
+
+            
+            </body></html>
